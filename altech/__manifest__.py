@@ -25,6 +25,7 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'views/assets.xml',
         'views/material.xml',
         'views/supplier.xml',
         'views/main_menu.xml',
@@ -37,4 +38,8 @@
     'installable': True,
     'application': True,
     'auto_install': False,
+    'qweb': [
+        'static/src/xml/inherit_numpad_pos.xml',
+        'static/src/xml/inherit_payment_numpad.xml',
+    ],
 }
